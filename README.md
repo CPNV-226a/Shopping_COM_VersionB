@@ -1,82 +1,30 @@
-﻿# 226_Shopping
+﻿# 226a - Shopping - Eval
 
-Ce petit projet permet l'entrainement à la POO ainsi qu'au développement orienté par les tests (TDD).
+## Sujet à traiter
+Application de gestion de panier de courses.
 
-## Installation
+### Prise en main du code
 
-## Pré-requis
+1)  Récupérer le dépôt
 
-* Visual Studio 2022 Enterprise Edition
-* Git SCM (for Windows), dernière version
+```
+    git clone <url du dépôt>
+```
+   
+2) Réaliser la première compilation. Il est important que le réseau soit disponible. Le gestionnaire de dépendences (Nguet) en a besoin pour fonctionner correctement.
 
-### Première compilation
-Après avoir "clone" le dépôt sur la branche main, vous pouvez tenter une première compilation qui devrait vous donner ce résultat:
-
-[INPUT]
-
-Menu: Build->Build Solution
-
-[OUTPUT]
 ```
 3>Done building project "TestShopping.csproj".
-========== Rebuild All: 3 succeeded, 0 failed, 0 skipped ==========
-========== Rebuild started at 13:21 and took 00.747 seconds ==========
-```
-### Exécuter les tests
-
-Pour afficher l'explorateur de test:
-MENU : Test-> Test Explorer
-
-[INPUT]
-
-![image](https://github.com/CPNV-226a/Shopping/assets/5616312/4d05053e-f261-41a3-b445-f6d79bf80eb1)
-
-[OUTPUT]
-
-![image](https://github.com/CPNV-226a/Shopping/assets/5616312/182d2ce6-f4aa-465a-be9c-0215d458ee7c)
-
-Vous obtenez tous les tests en échecs présentant le même message d'erreur:
-"System.NotImplementedException:[...]"
-
-Cela prouve que votre projet se compile et que les tests sont opérationnels.
-
-## Pour s'entraîner
-
-Le dépôt est constitué de 4 branches:
-
-```
---main                  //état de départ, mais il est préférable de partir sur develop
---develop               //état de départ, la branche de base pour débuter votre entrainement
---feature/Cart          //la solution pour Cart (intégrant aussi bien CartItem que Article)
---feature/CartItem      //la solution pour CartItem (intégrant aussi Article)
---feature/Article       //la solution pour Article
-```
-Le contenu de main est identique à develop. Vous pouvez débuter l'entrainement sur l'une ou l'autre, même si les bonnes pratiques nous poussent à utiliser *develop*.
-
-Via votre terminal, lancer la commande suivante:
-```
-git switch develop
-```
-Les fonctionnalités doivent être réalisées dans ce sens :
-
-```
-Article->CartItem->Cart
+========== Build: 3 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+========== Build started at 18:27 and took 00.913 seconds ==========
 ```
 
-Soit vous utilisez git pour passer d'une branche à l'autre, soit vous pouvez vous aider de Github pour aller voir le contenu:
+3) Lancer ensuite tous les tests du projet.
 
-* [lien pour voir le contenu de la feature/Article](https://github.com/CPNV-226a/Shopping/tree/feature/Article)
-* [lien pour voir le contenu de la feature/CartItem](https://github.com/CPNV-226a/Shopping/tree/feature/CartItem)
-* [lien pour voir le contenu de la feature/Cart](https://github.com/CPNV-226a/Shopping/tree/feature/Cart)
- 
-## Demander le l'aide
+![StartSituation](./Docs/StartSituation.PNG)
 
-* [Ouvrir une issue](https://github.com/CPNV-226a/Shopping/issues)
+### Moyens à disposition
 
-<<<<<<< Updated upstream
-## License
-[LICENCE](./LICENCE)
-=======
 * Un environnement de développement Visual Studio 2022 Entreprise.
 * Tout le code produit durant le cours.
 * Le réseau est exclu (excepté pour la première compilation) tout comme le travail collaboratif.
@@ -96,10 +44,10 @@ Soit vous utilisez git pour passer d'une branche à l'autre, soit vous pouvez vo
 * Ne pas déstabiliser les tests actuels.
 * Les valeurs retournées par les classes métiers doivent être calculées (pas de retour codé en dur)
 
-*Qualité du livrabe*
+*Qualité du livrable*
 * Respect des consignes de livraison.
 * Respect des principes POO.
-* Les classes de tests ne doivent pas avoir subi aucune modification.
+* Les classes de tests ne doivent avoir subi aucune modification.
 
 **Notation**
 
@@ -109,5 +57,4 @@ Soit vous utilisez git pour passer d'une branche à l'autre, soit vous pouvez vo
 
 Nicolas Glassey
 
-27-OCT-2023
->>>>>>> Stashed changes
+1-NOV-2023
